@@ -1,4 +1,4 @@
-#!/home/ricardo-zambrano/Documents/packages_practice/first-python-package/.venv/bin/python3.12
+#!/home/ricardo-zambrano/Documents/packages_practice/first-python-package/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
