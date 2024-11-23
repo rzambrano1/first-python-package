@@ -19,3 +19,4 @@ src/imppkg/harmonic_mean.c
 src/imppkg/harmonic_mean.pyx
 src/imppkg/harmony.py
 src/imppkg/hello.py
+test/test_harmonic_mean.py
