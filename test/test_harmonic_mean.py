@@ -22,7 +22,6 @@ def test_harmony_parametrized(input_one, input_two, input_three, expected, monke
 
     expected_value = colored(expected, "red", "on_cyan", attrs=["bold"])
     actual_output = capsys.readouterr().out.strip().replace("\x1b[0m\x1b[0m", "\x1b[0m")
-    
     assert actual_output == expected_value
 
 
