@@ -20,8 +20,10 @@ def test_harmony_parametrized(input_one, input_two, input_three, expected, monke
 
     main()
 
-    expected_value = expected
-    assert capsys.readouterr().out.strip() == colored(expected_value, "red", "on_cyan", attrs=["bold"])
+    expected_value = colored(expected, "red", "on_cyan", attrs=["bold"])
+    actual_output = capsys.readouterr().out.strip().replace("\x1b[0m\x1b[0m", "\x1b[0m")
+    
+    assert actual_output == expected_value
 
 
 # def test_harmony_happy_path(monkeypatch, capsys):
