@@ -13,7 +13,11 @@ author = 'Ricardo Zambrano'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+#> RZ: These extensions for sphinx-apidoc are not enabled by default [p. 139]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autodoc.typehints"
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
