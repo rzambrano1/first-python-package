@@ -16,7 +16,7 @@ def _parse_num(inputs: list[str]) -> list[float]:
 
     Args:
         inpus(list[str]): A list of numbers in passed as strings from the CLI.
-    
+
     Returns:
         list[float]: Casts the numbers passed as string to float. The output is
         a list of floats.
@@ -42,7 +42,7 @@ def _calculate_results(nums: list[float]) -> float:
     try:
         #: There is variable called result in this try-except block.
         #: The variable definition calls harmonic_mean()
-        result = harmonic_mean(nums) #: Alternative placement od doc comment
+        result = harmonic_mean(nums)  #: Alternative placement od doc comment
         return result
     except ZeroDivisionError:
         # If there is no input or if the input is zero, rpoceed with the default result

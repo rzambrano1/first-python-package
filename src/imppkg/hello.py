@@ -13,7 +13,6 @@ This module is meant to test sphinx
 # > git remote add origin https://github.com/rzambrano1/first-python-package.git
 
 
-
 class MyClass(object):
     """
     Description for class.
@@ -35,8 +34,8 @@ class MyClass(object):
 
         :meta public:
         """
-        self.var1 = par1 
-        self.var2 = par2 
+        self.var1 = par1
+        self.var2 = par2
 
     def method(self):
         """
