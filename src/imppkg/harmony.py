@@ -1,3 +1,9 @@
+"""
+A command-line interface for calculating the harmonic mean of user-provided numbers.
+
+:meta public:
+"""
+
 import sys
 from imppkg.harmonic_mean import harmonic_mean
 from termcolor import cprint
@@ -5,7 +11,18 @@ from termcolor import colored
 
 
 def _parse_num(inputs: list[str]) -> list[float]:
+    """
+    This function parses the parameters from the cli.
 
+    Args:
+        inpus(list[str]): A list of numbers in passed as strings from the CLI.
+    
+    Returns:
+        list[float]: Casts the numbers passed as string to float. The output is
+        a list of floats.
+
+    :meta public:
+    """
     try:
         nums = [float(arg) for arg in inputs]
     except ValueError:
@@ -16,9 +33,16 @@ def _parse_num(inputs: list[str]) -> list[float]:
 
 
 def _calculate_results(nums: list[float]) -> float:
+    """
+    This function will have a coment to send to sphix
+
+    :meta public:
+    """
 
     try:
-        result = harmonic_mean(nums)
+        #: There is variable called result in this try-except block.
+        #: The variable definition calls harmonic_mean()
+        result = harmonic_mean(nums) #: Alternative placement od doc comment
         return result
     except ZeroDivisionError:
         # If there is no input or if the input is zero, rpoceed with the default result

@@ -20,6 +20,8 @@ src/imppkg/harmonic_mean.pyx
 src/imppkg/harmony.py
 src/imppkg/hello.py
 src/imppkg/py.typed
+src/imppkg/__pycache__/__init__.cpython-312.pyc
+src/imppkg/__pycache__/hello.cpython-312.pyc
 src/pubpypack_harmony_ricardo_zambrano.egg-info/PKG-INFO
 src/pubpypack_harmony_ricardo_zambrano.egg-info/SOURCES.txt
 src/pubpypack_harmony_ricardo_zambrano.egg-info/dependency_links.txt

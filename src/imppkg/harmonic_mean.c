@@ -2084,6 +2084,7 @@ static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_imppkg_harmonic_mean[] = "imppkg.harmonic_mean";
 static const char __pyx_k_src_imppkg_harmonic_mean_pyx[] = "src/imppkg/harmonic_mean.pyx";
+static const char __pyx_k_This_is_a_Cython_module_meta_pu[] = "\nThis is a Cython module.\n\n:meta public:\n";
 /* #### Code section: decls ### */
 static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_args); /* proto */
 /* #### Code section: late_includes ### */
@@ -2285,15 +2286,18 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_codeobj__2 __pyx_mstate_global->__pyx_codeobj__2
 /* #### Code section: module_code ### */
 
-/* "imppkg/harmonic_mean.pyx":1
+/* "imppkg/harmonic_mean.pyx":7
+ * """
+ * 
  * def harmonic_mean(*args):             # <<<<<<<<<<<<<<
- *     if type(args[0]) == list:
- *         measurements = args[0]
+ *     """
+ *     This is a function written for Cyton. This is a reference to the math:
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6imppkg_13harmonic_mean_1harmonic_mean(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_6imppkg_13harmonic_mean_1harmonic_mean = {"harmonic_mean", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6imppkg_13harmonic_mean_1harmonic_mean, METH_VARARGS|METH_KEYWORDS, 0};
+PyDoc_STRVAR(__pyx_doc_6imppkg_13harmonic_mean_harmonic_mean, "\n    This is a function written for Cyton. This is a reference to the math:\n    https://en.wikipedia.org/wiki/Harmonic_mean \n\n    Args:\n        *args: A list of numbers passed as floats.\n    \n    Returns:\n        Harmonic mean of the numbers.\n\n    :meta public:\n    ");
+static PyMethodDef __pyx_mdef_6imppkg_13harmonic_mean_1harmonic_mean = {"harmonic_mean", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6imppkg_13harmonic_mean_1harmonic_mean, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6imppkg_13harmonic_mean_harmonic_mean};
 static PyObject *__pyx_pw_6imppkg_13harmonic_mean_1harmonic_mean(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_args = 0;
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
@@ -2336,34 +2340,36 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("harmonic_mean", 1);
 
-  /* "imppkg/harmonic_mean.pyx":2
- * def harmonic_mean(*args):
+  /* "imppkg/harmonic_mean.pyx":20
+ *     :meta public:
+ *     """
  *     if type(args[0]) == list:             # <<<<<<<<<<<<<<
  *         measurements = args[0]
  *     else:
  */
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_args, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_args, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_t_1)), ((PyObject *)(&PyList_Type)), Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_t_1)), ((PyObject *)(&PyList_Type)), Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_3 < 0))) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_3 < 0))) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "imppkg/harmonic_mean.pyx":3
- * def harmonic_mean(*args):
+    /* "imppkg/harmonic_mean.pyx":21
+ *     """
  *     if type(args[0]) == list:
  *         measurements = args[0]             # <<<<<<<<<<<<<<
  *     else:
  *         measurements = list(args)
  */
-    __pyx_t_2 = __Pyx_GetItemInt_Tuple(__pyx_v_args, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt_Tuple(__pyx_v_args, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_measurements = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "imppkg/harmonic_mean.pyx":2
- * def harmonic_mean(*args):
+    /* "imppkg/harmonic_mean.pyx":20
+ *     :meta public:
+ *     """
  *     if type(args[0]) == list:             # <<<<<<<<<<<<<<
  *         measurements = args[0]
  *     else:
@@ -2371,7 +2377,7 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
     goto __pyx_L3;
   }
 
-  /* "imppkg/harmonic_mean.pyx":5
+  /* "imppkg/harmonic_mean.pyx":23
  *         measurements = args[0]
  *     else:
  *         measurements = list(args)             # <<<<<<<<<<<<<<
@@ -2379,43 +2385,43 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
  *     inverse_args = [1/arg for arg in measurements]
  */
   /*else*/ {
-    __pyx_t_2 = PySequence_List(__pyx_v_args); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
+    __pyx_t_2 = PySequence_List(__pyx_v_args); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_measurements = __pyx_t_2;
     __pyx_t_2 = 0;
   }
   __pyx_L3:;
 
-  /* "imppkg/harmonic_mean.pyx":6
+  /* "imppkg/harmonic_mean.pyx":24
  *     else:
  *         measurements = list(args)
  *     num_measurements = len(measurements)             # <<<<<<<<<<<<<<
  *     inverse_args = [1/arg for arg in measurements]
  *     return num_measurements / sum(inverse_args)
  */
-  __pyx_t_4 = PyObject_Length(__pyx_v_measurements); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 6, __pyx_L1_error)
-  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_4 = PyObject_Length(__pyx_v_measurements); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_num_measurements = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "imppkg/harmonic_mean.pyx":7
+  /* "imppkg/harmonic_mean.pyx":25
  *         measurements = list(args)
  *     num_measurements = len(measurements)
  *     inverse_args = [1/arg for arg in measurements]             # <<<<<<<<<<<<<<
  *     return num_measurements / sum(inverse_args)
  */
   { /* enter inner scope */
-    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L6_error)
+    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 25, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_2);
     if (likely(PyList_CheckExact(__pyx_v_measurements)) || PyTuple_CheckExact(__pyx_v_measurements)) {
       __pyx_t_1 = __pyx_v_measurements; __Pyx_INCREF(__pyx_t_1);
       __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_measurements); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L6_error)
+      __pyx_t_4 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_measurements); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L6_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_5 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 7, __pyx_L6_error)
+      __pyx_t_5 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L6_error)
     }
     for (;;) {
       if (likely(!__pyx_t_5)) {
@@ -2423,28 +2429,28 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_1);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 7, __pyx_L6_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 25, __pyx_L6_error)
             #endif
             if (__pyx_t_4 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely((0 < 0))) __PYX_ERR(0, 7, __pyx_L6_error)
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely((0 < 0))) __PYX_ERR(0, 25, __pyx_L6_error)
           #else
-          __pyx_t_6 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 7, __pyx_L6_error)
+          __pyx_t_6 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 25, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         } else {
           {
             Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_1);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 7, __pyx_L6_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 25, __pyx_L6_error)
             #endif
             if (__pyx_t_4 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely((0 < 0))) __PYX_ERR(0, 7, __pyx_L6_error)
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely((0 < 0))) __PYX_ERR(0, 25, __pyx_L6_error)
           #else
-          __pyx_t_6 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 7, __pyx_L6_error)
+          __pyx_t_6 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 25, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         }
@@ -2454,7 +2460,7 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 7, __pyx_L6_error)
+            else __PYX_ERR(0, 25, __pyx_L6_error)
           }
           break;
         }
@@ -2462,9 +2468,9 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
       }
       __Pyx_XDECREF_SET(__pyx_7genexpr__pyx_v_arg, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_int_1, __pyx_7genexpr__pyx_v_arg); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 7, __pyx_L6_error)
+      __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_int_1, __pyx_7genexpr__pyx_v_arg); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 25, __pyx_L6_error)
       __Pyx_GOTREF(__pyx_t_6);
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_6))) __PYX_ERR(0, 7, __pyx_L6_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_6))) __PYX_ERR(0, 25, __pyx_L6_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2478,25 +2484,27 @@ static PyObject *__pyx_pf_6imppkg_13harmonic_mean_harmonic_mean(CYTHON_UNUSED Py
   __pyx_v_inverse_args = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "imppkg/harmonic_mean.pyx":8
+  /* "imppkg/harmonic_mean.pyx":26
  *     num_measurements = len(measurements)
  *     inverse_args = [1/arg for arg in measurements]
  *     return num_measurements / sum(inverse_args)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_sum, __pyx_v_inverse_args); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_sum, __pyx_v_inverse_args); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_num_measurements, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_num_measurements, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "imppkg/harmonic_mean.pyx":1
+  /* "imppkg/harmonic_mean.pyx":7
+ * """
+ * 
  * def harmonic_mean(*args):             # <<<<<<<<<<<<<<
- *     if type(args[0]) == list:
- *         measurements = args[0]
+ *     """
+ *     This is a function written for Cyton. This is a reference to the math:
  */
 
   /* function exit code */
@@ -2554,7 +2562,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_sum = __Pyx_GetBuiltinName(__pyx_n_s_sum); if (!__pyx_builtin_sum) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_builtin_sum = __Pyx_GetBuiltinName(__pyx_n_s_sum); if (!__pyx_builtin_sum) __PYX_ERR(0, 26, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -2565,15 +2573,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "imppkg/harmonic_mean.pyx":1
+  /* "imppkg/harmonic_mean.pyx":7
+ * """
+ * 
  * def harmonic_mean(*args):             # <<<<<<<<<<<<<<
- *     if type(args[0]) == list:
- *         measurements = args[0]
+ *     """
+ *     This is a function written for Cyton. This is a reference to the math:
  */
-  __pyx_tuple_ = PyTuple_Pack(5, __pyx_n_s_args, __pyx_n_s_measurements, __pyx_n_s_num_measurements, __pyx_n_s_inverse_args, __pyx_n_s_arg); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(5, __pyx_n_s_args, __pyx_n_s_measurements, __pyx_n_s_num_measurements, __pyx_n_s_inverse_args, __pyx_n_s_arg); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_imppkg_harmonic_mean_pyx, __pyx_n_s_harmonic_mean, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_imppkg_harmonic_mean_pyx, __pyx_n_s_harmonic_mean, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -2681,7 +2691,7 @@ namespace {
   {
       PyModuleDef_HEAD_INIT,
       "harmonic_mean",
-      0, /* m_doc */
+      __pyx_k_This_is_a_Cython_module_meta_pu, /* m_doc */
     #if CYTHON_PEP489_MULTI_PHASE_INIT
       0, /* m_size */
     #elif CYTHON_USE_MODULE_STATE
@@ -2842,7 +2852,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_harmonic_mean(PyObject *__pyx_pyin
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("harmonic_mean", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("harmonic_mean", __pyx_methods, __pyx_k_This_is_a_Cython_module_meta_pu, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #elif CYTHON_USE_MODULE_STATE
   __pyx_t_1 = PyModule_Create(&__pyx_moduledef); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -2938,15 +2948,23 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "imppkg/harmonic_mean.pyx":1
+  /* "imppkg/harmonic_mean.pyx":7
+ * """
+ * 
  * def harmonic_mean(*args):             # <<<<<<<<<<<<<<
- *     if type(args[0]) == list:
- *         measurements = args[0]
+ *     """
+ *     This is a function written for Cyton. This is a reference to the math:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6imppkg_13harmonic_mean_1harmonic_mean, 0, __pyx_n_s_harmonic_mean, NULL, __pyx_n_s_imppkg_harmonic_mean, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6imppkg_13harmonic_mean_1harmonic_mean, 0, __pyx_n_s_harmonic_mean, NULL, __pyx_n_s_imppkg_harmonic_mean, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_harmonic_mean, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_harmonic_mean, __pyx_t_2) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "imppkg/harmonic_mean.pyx":1
+ * """             # <<<<<<<<<<<<<<
+ * This is a Cython module.
+ * 
+ */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)

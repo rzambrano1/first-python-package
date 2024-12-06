@@ -1,0 +1,10 @@
+rst
+
+.. _history:
+
+History of Hamony
+=================
+
+When I decided to **harmonize** with the universe, I sat down and investigated 
+where to find a cool book about Python packages. The I found this awesome book.
+When following its examples I was pleased to find the *harmony* function.
