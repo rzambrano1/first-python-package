@@ -39,3 +39,8 @@ autodoc_default_options = {
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+
+from importlib import metadata
+
+PACKAGE_VERSION = metadata.version('pubpypack-harmony-ricardo-zambrano')
+version = release = PACKAGE_VERSION

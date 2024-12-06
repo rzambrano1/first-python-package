@@ -16,9 +16,7 @@ In this paragraph I tested reStructuredText feats, such as: *italics*, **boldfat
 inline code ``python_variable = "foo"``. 
 
 .. automodule:: src.imppkg
-   :members:
-
-.. automodule:: src.imppkg.hello    
+   :members:   
 
 .. toctree::
    :maxdepth: 2
